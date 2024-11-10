@@ -1,0 +1,45 @@
+/* styles/HighMoter.module.css */
+
+/* General Container */
+.highMoterContainer {
+    width: auto; /* Full width for responsiveness */
+     /* Limit maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 2rem 1rem; /* Padding for spacing */
+    text-align: center; /* Center text */
+    background-color: #f9fafb; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Style */
+.highMoterTitle {
+    font-size: 2.5rem; /* Base font size */
+    color: #1f2937; /* Dark gray color */
+    margin-bottom: 1rem; /* Space below title */
+}
+
+/* Description Style */
+.highMoterDescription {
+    font-size: 1rem; /* Base font size for small screens */
+    color: #4B5563; /* Medium gray color */
+    margin-top: 1rem; /* Space above description */
+}
+
+/* Image Style */
+.highMoterImage {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+   
+}
+
+/* Responsive Text Sizes */
+@media (min-width: 768px) {
+    .highMoterTitle {
+        font-size: 3rem; /* Larger title on medium screens */
+    }
+
+    .highMoterDescription {
+        font-size: 1.25rem; /* Larger description on medium screens */
+    }
+}

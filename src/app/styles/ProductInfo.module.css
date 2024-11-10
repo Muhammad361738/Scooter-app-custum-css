@@ -1,0 +1,85 @@
+/* styles/ProductInfo.module.css */
+
+/* General Styles */
+.container {
+    width: 100%;
+    margin-top: 5rem; /* Adjusts margin for top spacing */
+    text-align: center; /* Center text for headings and paragraphs */
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2.5rem; /* Large title size */
+    font-weight: bold; /* Bold title */
+    color: #4B5563; /* Gray color */
+  }
+  
+  .description {
+    font-size: 1rem; /* Small text size */
+    color: #4B5563; /* Gray color */
+    margin-top: 2rem; /* Space above description */
+  }
+  
+  /* Flexbox Container for Image and Features */
+  .flexContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 2rem; /* Space above the flex container */
+  }
+  
+  /* Image Styles */
+  .imageContainer {
+    flex: 1 1 300px; /* Allow image to grow and shrink, with a base width */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
+  }
+  
+  .productImage {
+    width: 100%; /* Full width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Features List Styles */
+  .featuresContainer {
+    padding: 1rem; /* Padding around features */
+    flex: 1 1 300px; /* Allow features to grow and shrink */
+    margin-left: 2rem; /* Space between image and features */
+  }
+  
+  .featureItem {
+    display: flex; /* Use flexbox for feature items */
+    align-items: center; /* Center items vertically */
+    margin-top: 1rem; /* Space between feature items */
+  }
+  
+  .featureIcon {
+    width: 3rem; /* Fixed width for icons */
+    height: 3rem; /* Fixed height for icons */
+    margin-right: 1rem; /* Space between icon and text */
+  }
+  
+  .featureText {
+    font-size: 1rem; /* Standard text size */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem; /* Smaller title size on small screens */
+    }
+  
+    .description {
+      font-size: 0.875rem; /* Smaller description text */
+    }
+  
+    .flexContainer {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items */
+    }
+  
+    .featuresContainer {
+      margin-left: 0; /* Remove left margin on small screens */
+      margin-top: 2rem; /* Add space above features */
+    }
+  }

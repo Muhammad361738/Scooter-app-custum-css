@@ -1,0 +1,129 @@
+/* Container styling */
+.container {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    /* background: #000; */
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #4A4A4A;
+}
+
+/* Accessory sections */
+.accessoryContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.accessoryInfo {
+    display: grid;
+    justify-content: center;
+    padding-left: 1.25rem;
+    margin-top: 1rem;
+}
+
+.accessoryInfo h5 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Icon and text styling */
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.infoItem img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Image styling */
+.imageGroup {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.imageGroup img {
+    width: 50%;
+    height: auto;
+    max-width: 18rem;
+}
+
+.buttonContainer {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    width: 100%;
+    max-width: 23rem;
+    padding: 1rem;
+    border: 2px solid #333333;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 0.875rem;
+    }
+
+    .accessoryInfo h5 {
+        font-size: 1.25rem;
+    }
+
+    .infoItem {
+        font-size: 0.875rem;
+    }
+
+    .imageGroup img {
+        max-width: 12rem;
+    }
+
+    .buttonContainer button {
+        width: 100%;
+    }
+    .accessoryContainer {
+        justify-content: center;
+        
+    }
+    
+}
+@media (min-width: 111px) {
+    .accessoryContainer {
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+
+}

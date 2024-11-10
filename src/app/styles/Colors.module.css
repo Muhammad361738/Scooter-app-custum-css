@@ -1,0 +1,53 @@
+/* styles/Colors.module.css */
+
+.container {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-top: 2.5rem; /* 10 in tailwind equals 2.5rem */
+}
+
+.title {
+    font-size: 2rem; /* text-4xl */
+    text-align: center;
+    font-weight: bold;
+    color: #4B5563; /* gray-700 */
+}
+
+.description {
+    font-size: 0.875rem; /* text-sm */
+    color: #4B5563; /* gray-700 */
+    text-align: center;
+    margin-top: 1.25rem; /* mt-5 */
+
+    /* For larger screens */
+    @media (min-width: 1024px) {
+        font-size: 1.25rem; /* lg:text-xl */
+    }
+}
+
+.image1 {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+    width: 80%; /* Increase size; adjust as needed */
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image {
+    width: 12rem; /* w-48 */
+    height: 14rem; /* h-56 */
+    position: relative;
+
+    /* For larger screens */
+    @media (min-width: 1024px) {
+        width: 15rem; /* lg:w-60 */
+    }
+}

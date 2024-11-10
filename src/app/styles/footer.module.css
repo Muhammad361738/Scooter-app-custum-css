@@ -1,0 +1,93 @@
+/* styles/Page.module.css */
+
+.pageContainer {
+    background-color: #374151; /* bg-gray-700 */
+    padding: 2rem;
+    
+}
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.footerImage {
+    width: 22rem; /* Adjusted for a more pixel-perfect look */
+    height: auto;
+    z-index: 10;
+}
+
+.column {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 20rem; /* Ensures responsive columns with minimum width */
+    max-width: 12rem;
+}
+
+.columnTitle {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+
+.columnText {
+    color: #FFFFFF;
+}
+
+.columnTextItem {
+    color: #FFFFFF;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.columnTextItem:hover {
+    color: #D97706; /* hover:text-amber-600 */
+}
+
+.socialIconsContainer {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+
+.socialIcon {
+    width: 2.5rem; /* Rounded social icon size */
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF; /* bg-white */
+}
+
+.footerText {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+/* Responsive styling */
+@media (min-width: 768px) {
+    .mainContent {
+        justify-content: center;
+    }
+
+    .footerImage {
+        width: 18rem; /* Adjusted for medium screens */
+    }
+
+    .column {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
